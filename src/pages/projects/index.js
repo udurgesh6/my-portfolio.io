@@ -36,7 +36,7 @@ const index = () => {
             target="_blank"
           >
             <Image
-              src="/static/joltcollab_site.png"
+              src="/static/joltcollabsite.png"
               width="200"
               height="200"
               className="rounded-t-md w-full"
@@ -60,7 +60,7 @@ const index = () => {
             target="_blank"
           >
             <Image
-              src="/static/happyagility_site.png"
+              src="/static/happyagilitysite.png"
               width="200"
               height="200"
               className="rounded-t-md w-full"
@@ -85,7 +85,7 @@ const index = () => {
             target="_blank"
           >
             <Image
-              src="/static/remix_site.png"
+              src="/static/remixsite.png"
               width="200"
               height="200"
               className="rounded-t-md w-full"
@@ -111,7 +111,7 @@ const index = () => {
               width="200"
               height="200"
               className="rounded-t-md w-full"
-              src="/static/boho_site.png"
+              src="/static/bohosite.png"
               priority
             />
             <div className="flex flex-col ">
