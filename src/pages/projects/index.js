@@ -35,7 +35,13 @@ const index = () => {
             href="https://udurgesh6.wixsite.com/joltcollab"
             target="_blank"
           >
-            <img src="/joltcollab_site.png" className="rounded-t-md" priority />
+            <Image
+              src="/joltcollab_site.png"
+              width="200"
+              height="200"
+              className="rounded-t-md w-full"
+              priority
+            />
             <div className="flex flex-col ">
               <p className="font-semibold text-md text-gray-800 mr-2 xs:mt-3">
                 JoltCollab
@@ -53,9 +59,11 @@ const index = () => {
             href="https://www.happyagility.com/"
             target="_blank"
           >
-            <img
+            <Image
               src="/happyagility_site.png"
-              className="rounded-t-md"
+              width="200"
+              height="200"
+              className="rounded-t-md w-full"
               priority
             />
             <div className="flex flex-col ">
@@ -76,7 +84,13 @@ const index = () => {
             href="https://remix.happyagility.com/certificate/1623076852477"
             target="_blank"
           >
-            <img src="/remix_site.png" className="rounded-t-md" priority />
+            <Image
+              src="/remix_site.png"
+              width="200"
+              height="200"
+              className="rounded-t-md w-full"
+              priority
+            />
             <div className="flex flex-col ">
               <p className="font-semibold text-gray-800 mr-2 xs:mt-3">Remark</p>
               <p className="text-sm mt-2">
@@ -93,7 +107,13 @@ const index = () => {
             href="https://www.bohoprocure.com/"
             target="_blank"
           >
-            <img src="/boho_site.png" className="rounded-t-md" priority />
+            <Image
+              width="200"
+              height="200"
+              className="rounded-t-md w-full"
+              src="/boho_site.png"
+              priority
+            />
             <div className="flex flex-col ">
               <p className="font-semibold text-gray-800 mr-2 xs:mt-3 ">Boho</p>
               <p className="text-sm mt-2">
