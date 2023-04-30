@@ -1,0 +1,102 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                        Int                         @id @default(autoincrement())
+  first_name                String
+  last_name                 String
+  email                     String                      @unique
+  user_id                   String                      @unique
+  linked_in                 String                      @unique
+  OpenSourceProjects        OpenSourceProjects[]
+  ProjectInvolvementDetails ProjectInvolvementDetails[]
+  Requirements              Requirements[]
+  StarDeveloper             StarDeveloper[]
+}
+
+model OpenSourceProjects {
+  id                        Int                         @id @default(autoincrement())
+  project_id                String                      @unique @default(cuid())
+  project_name              String
+  project_description       String
+  license_type              String
+  project_image             String
+  programming_languages     String
+  framework_library         String
+  git_repo                  String
+  website_link              String
+  maintainer_email          String
+  version                   String
+  contribution_guidelines   String
+  status                    String                      @default("Inactive")
+  created_at                DateTime                    @default(now())
+  domain                    String                      @default("Other")
+  user_id                   String
+  user                      User                        @relation(fields: [user_id], references: [user_id])
+  show_git_repo             Boolean                     @default(false)
+  show_website_link         Boolean                     @default(false)
+  isOpenSource              Boolean                     @default(true)
+  acceptInvitation          Boolean                     @default(true)
+  likes                     Int                         @default(0)
+  dislikes                  Int                         @default(0)
+  ProjectInvolvementDetails ProjectInvolvementDetails[]
+}
+
+model ProjectInvolvementDetails {
+  id                 Int                @id @default(autoincrement())
+  project_id         String
+  openSourceProjects OpenSourceProjects @relation(fields: [project_id], references: [project_id])
+  liked              Boolean            @default(false)
+  disliked           Boolean            @default(false)
+  user_id            String
+  user               User               @relation(fields: [user_id], references: [user_id])
+  applied            Boolean            @default(false)
+}
+
+model Requirements {
+  id                   Int      @id @default(autoincrement())
+  requirement_id       String   @unique @default(cuid())
+  listing_date         DateTime @default(now())
+  requirement_status   String   @default("Inactive")
+  name                 String
+  description          String
+  skills               String
+  requirement_type     String
+  start_budget         Int
+  end_budget           Int
+  online_availability  Boolean
+  offline_availability Boolean
+  location             String
+  email                String
+  phone                String
+  user_id              String
+  user                 User     @relation(fields: [user_id], references: [user_id])
+}
+
+model StarDeveloper {
+  id                   Int     @id @default(autoincrement())
+  rating               Int
+  designation          String
+  avatar               String
+  about                String
+  skills               String
+  charges_per_hour     Int
+  offline_availability Boolean
+  online_availability  Boolean
+  open_for_mentorship  Boolean
+  portfolio_url        String
+  linkedin_url         String
+  github_profile_url   String
+  location             String
+  email                String
+  phone                String
+  status               String  @default("Inactive")
+  user_id              String
+  user                 User    @relation(fields: [user_id], references: [user_id])
+}
