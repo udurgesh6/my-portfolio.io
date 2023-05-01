@@ -35,7 +35,7 @@ const index = () => {
             href="https://udurgesh6.wixsite.com/joltcollab"
             target="_blank"
           >
-            <Image
+            <img
               src="/static/joltcollabsite.png"
               width="200"
               height="200"
@@ -59,7 +59,7 @@ const index = () => {
             href="https://www.happyagility.com/"
             target="_blank"
           >
-            <Image
+            <img
               src="/static/happyagilitysite.png"
               width="200"
               height="200"
@@ -84,7 +84,7 @@ const index = () => {
             href="https://remix.happyagility.com/certificate/1623076852477"
             target="_blank"
           >
-            <Image
+            <img
               src="/static/remixsite.png"
               width="200"
               height="200"
@@ -107,7 +107,7 @@ const index = () => {
             href="https://www.bohoprocure.com/"
             target="_blank"
           >
-            <Image
+            <img
               width="200"
               height="200"
               className="rounded-t-md w-full"
