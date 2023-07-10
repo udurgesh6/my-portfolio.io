@@ -27,9 +27,10 @@
   --callout-border-rgb: 0, 0, 0;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
-  background-image: url("/bg.png");
+  background-image: url("/bg.webp");
   background-size: cover; /* Scale image to cover entire container */
   background-position: center;
+  height: 100vh;
 }
 
 * {

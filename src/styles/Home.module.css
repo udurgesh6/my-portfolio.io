@@ -44,15 +44,15 @@
 }
 
 .nav_links {
-  background-color: rgba(var(--callout-rgb), 0.1);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.4);
-  padding: 6px;
   margin-bottom: 10px;
-  border-radius: 5px;
   font-family: Cantarell;
   font-size: 20px;
   font-weight: 500;
-  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
 }
 .nav_links:hover {
   background-color: rgba(var(--callout-rgb), 0.2);
