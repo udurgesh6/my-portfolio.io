@@ -6,10 +6,10 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className="h-full max-w-[800px] w-full flex flex-wrap pt-5">
+      <div className="sm:h-full max-w-[800px] w-full flex flex-wrap pt-5">
         <Navbar />
         <div className="flex flex-col max-w-[550px] h-full overflow-y-scroll xs:p-5 pb-5">
-          <p className="font-mono h-[80px] flex flex-row items-center font-bold text-4xl xs:mb-2 text-gray-900">
+          <p className="font-mono flex flex-row items-center font-bold text-4xl xs:mb-2 text-gray-900">
             Durgesh Upadhyay
           </p>
           <div className="flex flex-row items-center mb-3">

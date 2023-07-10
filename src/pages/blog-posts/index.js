@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 const index = () => {
   return (
     <div className={styles.main}>
-      <div className="h-full max-w-[800px] w-full flex flex-wrap pt-5">
+      <div className="sm:h-full max-w-[800px] w-full flex flex-wrap pt-5">
         <Navbar />
         <div className="flex flex-col max-w-[500px] h-full overflow-y-scroll xs:p-5">
           <p className="font-mono h-[80px] flex flex-row items-center font-bold text-4xl mb-7">
