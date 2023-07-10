@@ -7,7 +7,7 @@ const index = () => {
       <div className="sm:h-full max-w-[800px] w-full flex flex-wrap pt-5">
         <Navbar />
         <div className="flex flex-col max-w-[600px] h-full overflow-y-scroll xs:p-5 w-[100%]">
-          <p className="font-mono h-[80px] flex flex-row items-center font-bold text-4xl mb-7">
+          <p className="font-mono h-[80px] flex flex-row items-center font-bold text-4xl sm:mb-7">
             Projects
           </p>
           <a
@@ -15,9 +15,9 @@ const index = () => {
             href="https://www.bohoprocure.com/"
             target="_blank"
           >
-            <img
-              width="200"
-              height="200"
+            <Image
+              width="400"
+              height="400"
               className="rounded-t-md w-full"
               src="/bohosite.webp"
               priority
@@ -44,11 +44,11 @@ const index = () => {
             href="https://www.happyagility.com/"
             target="_blank"
           >
-            <img
+            <Image
+              width="400"
+              height="400"
+              className="rounded-t-md w-full h-full"
               src="/happyagilitysite.png"
-              width="200"
-              height="200"
-              className="rounded-t-md w-full"
               priority
             />
             <div className="flex flex-col ">
@@ -69,11 +69,11 @@ const index = () => {
             href="https://remix.happyagility.com/certificate/1623076852477"
             target="_blank"
           >
-            <img
+            <Image
+              width="400"
+              height="400"
+              className="rounded-t-md w-full h-full"
               src="/remixsite.png"
-              width="200"
-              height="200"
-              className="rounded-t-md w-full"
               priority
             />
             <div className="flex flex-col ">
@@ -92,11 +92,11 @@ const index = () => {
             href="https://udurgesh6.wixsite.com/joltcollab"
             target="_blank"
           >
-            <img
+            <Image
+              width="400"
+              height="400"
+              className="rounded-t-md w-full h-full"
               src="/joltcollabsite.png"
-              width="200"
-              height="200"
-              className="rounded-t-md w-full"
               priority
             />
             <div className="flex flex-col ">

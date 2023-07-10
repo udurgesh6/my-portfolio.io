@@ -16,28 +16,28 @@ export default function Home() {
             <Link
               href="https://twitter.com/udurgesh6"
               target="_blank"
-              className="mr-3 shadow-lg"
+              className="mr-3 shadow-lg rounded-full"
             >
               <Image priority src="/twitter.png" height="25" width="25" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/durgeshupadhyay/"
               target="_blank"
-              className="mr-3 shadow-lg"
+              className="mr-3 shadow-lg rounded-full"
             >
               <Image priority src="/linkedin.png" height="25" width="25" />
             </Link>
             <Link
               href="https://hashnode.com/@udurgesh6"
               target="_blank"
-              className="mr-3 shadow-lg"
+              className="mr-3 shadow-lg rounded-full"
             >
               <Image priority src="/hashnode.png" height="25" width="25" />
             </Link>
             <Link
               href="https://github.com/udurgesh6"
               target="_blank "
-              className="shadow-lg"
+              className="shadow-lg rounded-full"
             >
               <Image priority src="/github.png" height="25" width="25" />
             </Link>
